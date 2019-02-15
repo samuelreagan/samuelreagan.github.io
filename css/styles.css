@@ -1,7 +1,6 @@
 /** Global Styles **/
 body {
   max-width: 100vw;
-  height: auto;
   overflow: hidden;
 }
 
@@ -10,6 +9,7 @@ body {
 }
 
 section {
+  background: white;
   min-height: 100vh;
 }
 
@@ -48,6 +48,15 @@ section {
   margin: 0 0.5rem;
 }
 
+#about {
+  display: none;
+  position: absolute;
+  right: 100vw;
+  top: 0;
+  -webkit-transition: 0.5s right ease;
+  transition: 0.5s right ease;
+}
+
 #about .self-portrait {
   height: auto;
   margin-bottom: 1rem;
@@ -55,6 +64,15 @@ section {
 }
 
 /** Projects **/
+#projects {
+  display: none;
+  position: absolute;
+  left: 100vw;
+  top: 0;
+  -webkit-transition: 0.5s left ease;
+  transition: 0.5s left ease;
+}
+
 .bg-clothespen {
   background: #ff2800;
 }
