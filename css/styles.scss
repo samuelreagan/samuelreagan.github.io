@@ -1,0 +1,109 @@
+/** Global Styles **/
+.text-center {
+  text-align: center;
+}
+section {
+  min-height: 100vh;
+}
+.section-header {
+  margin-bottom: 1rem;
+}
+.box-shadow {
+  box-shadow: 0px 2px 10px;
+}
+
+/***** Intro *****/
+#intro {
+  .row {
+    min-height: inherit;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  nav {
+    margin-top: 1.5rem;
+  }
+}
+
+/** About  **/
+#astateLink {
+  color: red;
+}
+#aceoneLink {
+  color: orange;
+}
+.contact-links {
+  font-size: 2.5rem;
+}
+.contact-links a {
+  margin: 0 0.5rem;
+}
+#about {
+  .self-portrait {
+    height: auto;
+    margin-bottom: 1rem;
+    width: 12rem;
+  }
+}
+
+/** Projects **/
+.bg-clothespen {
+  background: #ff2800;
+}
+.bg-lifeorg {
+  background: #6F73FB
+}
+
+/***** Media Queries *****/
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  #intro {
+    h1 {
+      font-size: 4rem;
+    }
+    nav {
+      margin-top: 2rem;
+      a {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .section-header {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+  #projects {
+    h3 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  #intro {
+    h1 {
+      font-size: 5rem;
+    }
+  }
+  #about {
+    .self-portrait {
+      width: 16rem;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+  #intro {
+    h1 {
+      font-size: 6rem;
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+}
