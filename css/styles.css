@@ -55,6 +55,10 @@ section {
   margin: 0 0.5rem;
 }
 
+.contact-links a:hover {
+  color: transparent;
+}
+
 #about .self-portrait {
   height: auto;
   margin-bottom: 1rem;
