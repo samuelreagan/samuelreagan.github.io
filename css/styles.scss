@@ -40,6 +40,9 @@ section {
 .contact-links a {
   margin: 0 0.5rem;
 }
+.contact-links a:hover {
+  color: transparent;
+}
 #about {
   display: none;
   position: absolute;
