@@ -32,12 +32,21 @@ a {
   margin-bottom: 2rem;
 }
 
+.links {
+  display: flex;
+}
+
+.link-col:first-child {
+  margin-bottom: 1rem;
+}
+
 .links a {
   background: #333;
   color: #fff;
   display: inline-block;
   margin: 0 0.5rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
+  width: 6rem;
 }
 
 @media(min-width: 1400px) {
@@ -53,19 +62,36 @@ a {
 }
 
 @media(max-width: 650px) {
-  html {
-    font-size: 12px;
+  .main-section h1 {
+    font-size: 3rem;
+  }
+  .main-section p {
+    font-size: 1.5rem;
+  }
+  .links {
+    flex-direction: column;
   }
 }
 
 @media(max-width: 500px) {
-  html {
-    font-size: 8px;
+  .main-section h1 {
+    font-size: 2rem;
+  }
+  .main-section p {
+    font-size: 1rem;
+  }
+  .links a {
+    font-size: 14px;
+    width: 5rem;
   }
 }
 
 @media(max-width: 300px) {
-  html {
-    font-size: 6px;
+  .main-section h1 {
+    font-size: 1.5rem;
+  }
+  .links a {
+    font-size: 12px;
+    width: 4rem;
   }
 }
