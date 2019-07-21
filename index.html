@@ -1,188 +1,31 @@
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <!-- Meta Info -->
+    <meta charset="utf-8">
     <meta name="author" content="Samuel Reagan">
-    <meta name="description" content="Personal Website of Samuel Reagan">
+    <meta name="description" content="The personal website of Samuel Reagan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title -->
     <title>Samuel Reagan</title>
+
     <!-- Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png">
-      </head>
+  </head>
   <body>
-        <!-- Intro Section -->
-    <section id="intro" class="container-fluid text-center">
-      <div class="row align-items-center">
-        <div class="col">
-          <h1 class="text-dark">Samuel Reagan</h1>
-          <nav>
-            <a href="#about" class="btn btn-dark text-white mr-1">About</a>
-            <a href="#projects" class="btn btn-dark text-white ml-1">Projects</a> 
-          </nav>   
-        </div>
+    <section class="main-section">
+      <h1>Samuel Reagan</h1>
+      <p>Software Developer</p>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/samuelreagan/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/samuelreagan" target="_blank" rel="noopener">Github</a>
+        <a href="mailto:samuel@samuelreagan.com">Email</a>
+        <a href="assets/sam_reagan_resume_web.pdf" target="_blank" rel="noopener">Resume</a>
       </div>
     </section>
-
-    <!-- About Section-->
-    <section id="about" class="container-fluid">
-      
-      <div class="section-header row bg-dark text-center pt-1 justify-content-center">
-        <div class="col">
-          <h2 class="text-white">About</h2>
-        </div>
-      </div>
-     
-      <div class="about-row row text-center justify-content-center">
-        <div class="col col-md-6">
-          <img class="self-portrait rounded-circle" src="assets/sam.jpg" alt="Sam Reagan">
-        </div>
-      </div>
-      
-      <div class="row justify-content-center">
-        <div class="col col-md-6">
-            <p>
-              Hey, I’m Sam. I’m a college student pursuing a BS in computer science 
-              at <a id="astateLink" href="https://www.astate.edu/" target="_blank">Arkansas 
-              State University</a> in Jonesboro, Arkansas. I’m a senior, 
-              expecting to graduate in the Spring of 2019. I have been studying web 
-              development and computer science since high school. I enjoy the experience 
-              of creating a project from scratch and then witnessing it improve someone’s 
-              life.
-            </p>
-            <p>
-              Since May of 2018, I have been a part of a web development internship with 
-              <a id="aceoneLink" href="http://www.aceone.io" target="_blank">AceOne 
-              Technologies</a>. I’ve been challenged with an array of projects utilizing 
-              frontend and backend technologies. I’ve been apart of projects for developing 
-              a web application to track an employee’s time spent working, a website to purchase 
-              online courses, and a REST API for a mobile application. This experience has been 
-              invaluable, especially since I’m still in college.
-            </p>
-        </div>
-      </div>
-      <!-- Contact Links -->
-      <div class="row text-center justify-content-center mb-3">
-        <div class="col col-md-6 contact-links">
-          <a href="mailto:samreagan96@gmail.com">
-            <i class="fas fa-envelope-square text-dark"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/samuelreagan" target="_blank">
-            <i class="fab fa-linkedin text-dark"></i>
-          </a>
-          <a href="https://github.com/samuelreagan" target="_blank">
-            <i class="fab fa-github-square text-dark"></i>
-          </a>
-          <a href="assets/sam_reagan_resume_web.pdf" target="_blank" title="My Resume">
-            <i class="fas fa-external-link-square-alt text-dark"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Project Section -->
-    <section id="projects" class="container-fluid">
-        <div class="section-header row bg-dark text-center pt-1">
-          <div class="col">
-            <h2 class="text-white">Projects</h2>
-          </div>
-        </div>
-
-                              <!-- Clothes Pen -->
-            <div class="row text-center pt-1">
-              <div class="col">
-                <h3>Life Organizer</h3>
-              </div>
-            </div>
-
-            <div class="row pt-1 justify-content-center mt-3 mb-3">
-              <div class="col col-md-6">
-                <img class="project-img img-fluid box-shadow rounded" src="assets/life_organizer.png" alt="Life Organizer Screenshot">
-              </div>
-            </div>
-
-            <div class="row pt-3 justify-content-center">
-              <div class="col col-md-6">
-                <p>
-                  I created this project for my Database Systems class in the Fall of 2018. I designed a web application to organize a user's life. They can track their daily tasks, habits, goals and notes. When user's complete tasks, goals, or habits they earn experience points that enable them to level up.
-<br><br>
-I completed this project using Bootstrap for the front-end interface, PHP for the back-end programming, and PL/SQL for the database.                </p>
-                <p>
-                  <strong>Technologies</strong>: PHP, PL/SQL, Bootstrap                </p>
-              </div>
-            </div>
-
-            <div class="row text-center mt-4 mb-4 justify-content-center">
-              <div class="col col-md-6">
-                
-                                  <a href="https://github.com/samuelreagan/Life-Organizer" class="btn bg-clothespen text-white" target="_blank">View Code</a>
-                              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col col-md-6">
-                <hr>
-              </div>
-            </div>
-                      <!-- Clothes Pen -->
-            <div class="row text-center pt-1">
-              <div class="col">
-                <h3>Clothes Pen</h3>
-              </div>
-            </div>
-
-            <div class="row pt-1 justify-content-center mt-3 mb-3">
-              <div class="col col-md-6">
-                <img class="project-img img-fluid box-shadow rounded" src="assets/clothespen.png" alt="Clothes Pen Screenshot">
-              </div>
-            </div>
-
-            <div class="row pt-3 justify-content-center">
-              <div class="col col-md-6">
-                <p>
-                  This project was created for a web design competition in PBL (Phi Beta Lambda). My partner and I were tasked to design a website for an imaginary, non-profit clothing store. We implemented the website with a playful color scheme, minimalistic design, interactive interface, responsive capabilities, and informative content.
-<br><br>
-My duties were to help visualize the design, create the mockups, and construct the website using HTML, CSS, and Javascript.
-<br><br>
-This website won first at the Arkansas State PBL Conference and then went on to win second place at the 2018 PBL National Leadership Conference in Baltimore, MD.                </p>
-                <p>
-                  <strong>Technologies</strong>: HTML5, CSS3, SASS, JS                </p>
-              </div>
-            </div>
-
-            <div class="row text-center mt-4 mb-4 justify-content-center">
-              <div class="col col-md-6">
-                                  <a href="https://clothespen.github.io" class="btn bg-clothespen text-white" target="_blank">Visit Website</a>
-                
-                                  <a href="https://github.com/clothespen" class="btn bg-clothespen text-white" target="_blank">View Code</a>
-                              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col col-md-6">
-                <hr>
-              </div>
-            </div>
-                  
-        <!-- More Projects -->
-        <div class="row text-center mb-4">
-          <div class="col">
-            <h3>More Projects Coming Soon!</h3>
-          </div>
-        </div>
-
-    </section>
-
-    <!-- Go to Top -->
-    <a id="scroll-up" href="#intro" class="btn btn-dark">
-      <i class="fa fa-caret-up" aria-hidden="true"></i>
-    </a>
-
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>
