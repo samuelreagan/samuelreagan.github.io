@@ -39,6 +39,12 @@ p {
   width: 75%;
 }
 
+img {
+  height: auto;
+  margin-bottom: 1.5rem;
+  width: 10rem;
+}
+
 .container {
   display: flex;
 }
@@ -129,6 +135,7 @@ p {
 
   .col {
     height: auto;
+    padding: 0.5rem;
     width: auto;
   }
 
