@@ -113,25 +113,27 @@ p {
 }
 
 @media (max-width: 768px) {
+  p {
+    font-size: 1rem;
+    line-height: 2rem;
+    width: auto;
+  }
+
+  svg {
+    width: 10%;
+  }
+
   .container {
     flex-direction: column;
   }
 
   .col {
-    height: calc(100vh - 100px);
+    height: auto;
     width: auto;
   }
 
   .col:first-child {
-    height: 100px;
-    min-height: 100px;
     transform: skewX(0deg);
-    width: auto;
-  }
-
-  p {
-    font-size: 1rem;
-    line-height: 2rem;
     width: auto;
   }
 
