@@ -54,6 +54,7 @@ img {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   justify-content: center;
   padding: 1rem;
   width: 66.6vw;
