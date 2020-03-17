@@ -53,8 +53,7 @@ img {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  min-height: 100vh;
   justify-content: center;
   padding: 1rem;
   width: 66.6vw;
