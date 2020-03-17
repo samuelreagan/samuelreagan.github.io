@@ -126,7 +126,7 @@ img {
   }
 
   svg {
-    width: 10%;
+    width: 50%;
   }
 
   .container {
@@ -134,7 +134,7 @@ img {
   }
 
   .col {
-    height: auto;
+    height: 100vh;
     padding: 0.5rem;
     width: auto;
   }
@@ -156,9 +156,5 @@ img {
 @media (max-width: 400px) {
   h1 {
     font-size: 2rem;
-  }
-
-  svg {
-    width: 7%;
   }
 }
