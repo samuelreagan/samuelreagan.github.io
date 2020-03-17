@@ -61,6 +61,7 @@ img {
 
 .col:first-child {
   background: #bb0000;
+  height: calc(var(--vh, 1vh) * 100);
   transform: skewX(-10deg);
   width: 33.3vw;
 }
