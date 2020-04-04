@@ -1,11 +1,11 @@
 //-- Global Variables --//
 $red: #bb0000;
+$dark-red: #990000;
 $light: #fff;
 $dark: #222;
 
 * {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -15,27 +15,236 @@ html {
 }
 
 body {
-  background: $light;
+  background: linear-gradient(45deg, $red 50%, $dark-red 50%) repeat;
+  background-size: 50px 50px;
+
+  //background: linear-gradient(90deg, $red 50%, $dark-red 100%) repeat;
+
+  //background: $red;
 }
 
 p {
-  color: $light;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  text-align: justify;
+  width: 50%; margin: auto;
+  color: $dark-red;
+  font-family: 'Open Sans', sans-serif;
 }
+
 
 //-- Layout Styles --//
 .splash-page {
+  clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 4rem), 50% 100%, 0% calc(100% - 4rem));
+  position: relative;
+  z-index: 4;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background: $light;
 }
 
 .section-header {
+  position: relative;
+  display: inline-block;
   margin-bottom: 1rem;
   text-align: center;
-  color: #fff;
+  color: $red;
+  font-size: 3rem;
+  font-family: 'Sen', sans-serif;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);// rotateZ(45deg);
+    width: 15px;
+    height: 15px;
+    background: $red;
+  }
+
+  &:before {
+    left: -1.5rem;
+    clip-path: polygon(50% 0%, 0% 50%, 50% 100%);
+  }
+
+  &:after {
+    right: -1.5rem;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%);
+    background: $dark-red;
+  }
+}
+
+// -- About Section -- //
+.main-section {
+  clip-path: polygon(2rem 0%, 50% 4rem, calc(100% - 2rem) 0%, calc(100% - 2rem) calc(100% - 4rem), 50% 100%, 2rem calc(100% - 4rem));
+  //clip-path: polygon(0% 0%, 50% 4rem, 100% 0%, 100% calc(100% - 4rem), 50% 100%, 0% calc(100% - 4rem));
+  min-height: 100vh;
+  padding: 7rem 6rem 6rem 6rem;
+  position: relative;
+  z-index: 4;
+  bottom: 1.5rem;
+  margin-top: 2rem;
+  background: $light;
+  text-align: center;
+
+  .inner-container {
+    margin: 0 auto;
+    //border-left: 5px solid $red;
+    //border-right: 5px solid $red;
+    color: $red;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.picture-container {
+  width: 18rem;
+  height: 18rem;
+  position: relative;
+  margin: 1rem 0 1.5rem 0;
+
+  .picture {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    width: 100%;
+    display: block;
+  }
+
+  &:before {
+    content: '';
+    width: 14rem;
+    height: 14rem;
+    position: absolute;
+    background: linear-gradient(45deg, $red 50%, $dark-red 50%) repeat;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotateZ(45deg);
+    //transform: rotateZ(90deg);
+  }
+}
+
+//-- Contact Section -->
+.project-section {
+  clip-path: polygon(0% 0%, 50% 4rem, 100% 0%, 100% 100%, 0% 100%);
+  padding: 5rem 0 2rem 0;
+  text-align: center;
+  background: $light;
+}
+
+.project-container {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.project {
+  clip-path: polygon(0% 0%, 50% 2rem, 100% 0%, 100% calc(100% - 2rem), 50% 100%, 0% calc(100% - 2rem));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20rem;
+}
+
+.first-project {
+  clip-path: polygon(0% 0%, 50% 0%, 100% 0%, 100% calc(100% - 2rem), 50% 100%, 0% calc(100% - 2rem));
+}
+
+.last-project {
+  clip-path: polygon(0% 0%, 50% 2rem, 100% 0%, 100% 100%, 50% 100%, 0% 100%);
+}
+
+.project-image {
+  height: 6rem;
+  margin-bottom: 1rem;
+}
+
+.project-name {
+  width: 100%;
+  font-family: 'Sen', sans-serif;
   font-size: 2rem;
-  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+
+.clothes-pen {
+  background:linear-gradient(rgba(0, 119, 176, 0.7), 
+  rgba(0, 119, 176, 0.7)
+  ),url('../assets/projects/clothes-pen-website.png') center no-repeat;
+
+  background-size: contain;
+}
+
+.life-organizer {
+  background:linear-gradient(rgba(111, 115, 251, 0.7), 
+    rgba(111,115,251, 0.7)
+  ),url('../assets/projects/life-organizer-website.png') center no-repeat;
+  background-size: contain;
+}
+
+.cscade {
+  background:linear-gradient(rgba(203, 0, 0, 0.7), 
+    rgba(203, 0, 0, 0.7)
+  ),url('../assets/projects/cscade-website.png') center no-repeat;
+  background-size: contain;
+}
+//-- Footer Section --//
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  color: $light;
+}
+
+.footer-logo {
+  width: 6rem;
+  margin-bottom: 4rem;
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4rem;
+
+  a {
+    border: 2px solid $light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateZ(45deg);
+    width: 3.5rem;
+    height: 3.5rem;
+    color: $light;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all 0.25s ease;
+
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+    }
+
+    &:hover {
+      background: $light;
+      color: $red;
+    }
+
+    i {
+      transform: rotateZ(-45deg);
+    }
+  }
+}
+
+.footer-text {
+  font-family: 'Open Sans', sans-serif;
 }
 
 //-- Main Header Styles --//
@@ -46,10 +255,12 @@ $incremental-delay: 0.1s;
 
 .header {
   position: absolute;
+  //left: 50%;
+  //transform: translateX(-50%);
   left: 1rem;
   top: 0.5rem;
   overflow: hidden;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Sen', sans-serif;
   font-size: 2rem;
 }
 
@@ -135,7 +346,7 @@ $incremental-delay: 0.1s;
   $menu-open-height: $menu-width * 4;
   $display-delay: 2.7s;
 
-  position: fixed;
+  position: absolute;
   right: 1rem;
   top: 1rem;
   z-index: 2;
@@ -181,7 +392,7 @@ $incremental-delay: 0.1s;
     animation: slideInRight 1s ease $display-delay;
     transform: rotateZ(-90deg);
     transform-origin: top center;
-    background: $red;
+    background: $dark-red;
   }
 
   .menu-items {
@@ -201,12 +412,13 @@ $incremental-delay: 0.1s;
       padding: 0.5rem;
       text-align: center;
       font-family: Arial, Helvetica, sans-serif;
-      color: #fff;
+      color: $light;
       text-decoration: none;
       opacity: 0;
+      background: $red;
 
       &:hover {
-        background: #aa0000;
+        background: $dark-red;
       }
     }
   }
@@ -258,6 +470,15 @@ $incremental-delay: 0.1s;
     width: 100%;
     height: 100%;
     background: $red;
+
+    &:after {
+      content: '';
+      clip-path: polygon(50% 75%, 100% 50%, 50% 100%);
+      width: 100%;
+      height: 100%;
+      background: $dark-red;
+      position: absolute;
+    }
   }
 }
 
@@ -267,19 +488,5 @@ $incremental-delay: 0.1s;
   }
   to {
     bottom: 50%;
-  }
-}
-
-// -- About Section -- //
-.about-section {
-  height: 100vh;
-  background: $red;
-  transform: skewY(-11deg);
-  padding: 3.5rem 0;
-
-  .inner-container {
-    transform: skewY(11deg);
-    max-width: 500px;
-    margin: 0 auto;
   }
 }
