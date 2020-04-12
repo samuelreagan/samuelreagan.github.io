@@ -1,11 +1,10 @@
 const { src, dest, parallel, watch } = require('gulp');
  
-const sass = require('gulp-sass');
-const sassLint = require('gulp-sass-lint');
+const sass = require('gulp-dart-sass');
 const minifyCSS = require('gulp-csso');
 
 function css() {
-  return src('./sass/**/*.scss')
+  return src('./sass/styles.scss')
     .pipe(sass())
     .pipe(minifyCSS())
     .pipe(dest('./css'));

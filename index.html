@@ -19,122 +19,69 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png">
   </head>
   <body>
-    <section class="splash-page">
-      <!-- Header  -->
-      <header class="header">
-        <span class="letter">S</span><span class="letter">a</span><span class="letter">m</span><span class="letter">u</span><span class="letter">e</span><span class="letter">l</span>&nbsp;<span class="letter">R</span><span class="letter">e</span><span class="letter">a</span><span class="letter">g</span><span class="letter">a</span><span class="letter">n</span>
+    <section class="hero-section">
+      <nav class="main-nav">
+        <a class="nav-logo" href="index.html">
+          <?xml version="1.0" standalone="no"?>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 160">
+            <path class="path main-path" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"
+              d="M 55,105
+                L 55,5
+                L 105,55
+                L 5,155
+                L 55,5
+                L 5,55
+                L 55,105"/>
+            <path class="path secondary-path" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"
+              d="M 65,115
+                L 105,155
+                L 85,95
+                L 65,115
+                L 105,155"/>
+          </svg>
+        </a>
+
+        <div class="nav-links">
+          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Development</a>
+          <a class="nav-link" href="#">Contact</a>
+        </div>
+      </nav>
+
+      <header class="main-header">
+        <h1>Samuel Reagan<h1>
+        <h2>Software Developer</h2>
       </header>
 
-      <!-- Menu -->
-      <div class="menu-container">
-        <div href="#" class="arrow top-arrow"></div>
-        <nav class="menu-items">
-          <a class="menu-item" href="#">Home</a>
-          <a class="menu-item" href="#about">About</a>
-          <a class="menu-item" href="#">Projects</a>
-          <a class="menu-item" href="#">Contact</a>
-        </nav>
-        <div href="#" class="arrow bottom-arrow"></div>
-      </div>
-
-      <!-- Logo -->
-      <?xml version="1.0" standalone="no"?>
-      <svg class="main-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 160">
-        <path class="path main-path" fill="none" stroke="#bb0000" stroke-width="1" stroke-linejoin="round"
-          d="M 55,105
-            L 55,5
-            L 105,55
-            L 5,155
-            L 55,5
-            L 5,55
-            L 55,105"/>
-        <path class="path secondary-path" fill="none" stroke="#bb0000" stroke-width="1" stroke-linejoin="round"
-          d="M 65,115
-            L 105,155
-            L 85,95
-            L 65,115
-            L 105,155"/>
-      </svg>
-
-      <!-- Arrow -->
-      <div class="arrow-container">
-        <a href="#about" class="arrow"></a>
-      </div>
+      <div class="mountains"></div>
+      <div class="sun"></div>
     </section>
-
-    <!-- About Section -->
-    <section class="main-section">
-      <div class="inner-container about-section" id="about">
-        <h2 class="section-header" title=".. and I like green eggs and ham.">Hello, I'm Sam</h2>
-        <div class="flex-container">
-          <div class="picture-container">
-            <img class="picture" src="assets/Screen Shot 2020-04-04 at 12.47.38 PM.png" alt="Samuel Reagan">
-          </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, suscipit esse accusamus similique quisquam officiis iure sapiente incidunt quam illum eaque qui aliquam velit? Labore blanditiis temporibus esse quis similique.</p>
-        </div>
+    <!--
+    <main class="main-content">
+      <div class="moon-container">
+        <div class="moon"></div>
+        <div class="star star-one"></div>
+        <div class="star star-two"></div>
+        <div class="star star-three"></div>
+        <div class="star star-four"></div>
+        <div class="star star-five"></div>
       </div>
-    </section>
-
-    <!-- Development 
-    <section class="section dev-section">
-
-    </section> --
-
-    <!-- Contact-->
-    <section class="section project-section">
-      <h2 class="section-header">Projects</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laborum quia perferendis autem quos minus quibusdam soluta reprehenderit, asperiores aliquam excepturi voluptates sed, illum dolorem, atque repellendus iste deleniti aut.</p>
-      <div class="project-container">
-        <div class="project first-project clothes-pen">
-          <img class="project-image" src="assets/projects/clothes-pen-logo.png" alt="Clothes Pen Logo">
-          <div class="project-name">Clothes Pen</div>
-        </div>
-        <div class="project life-organizer">
-          <img class="project-image" src="assets/projects/life-organizer-logo.png" alt="Life Organizer Logo">
-          <div class="project-name">Life Organizer</div>
-        </div>
-        <div class="project last-project cscade">
-          <img class="project-image" src="assets/projects/cscade_logo.png" alt="CSCADE Logo">
-        </div>
+      <section class="about-section">
+        <h2 class="section-header">About Me</h2>
+        <article class="section-content"></article>
+      </section>
+      <div class="rocket-container">
+        <div class="rocket"></div>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <?xml version="1.0" standalone="no"?>
-      <svg class="footer-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 160">
-        <path fill="#fff" stroke="#fff" stroke-width="1" stroke-linejoin="round"
-          d="M 55,105
-            L 55,5
-            L 105,55
-            L 5,155
-            L 55,5
-            L 5,55
-            L 55,105"/>
-        <path fill="#fff" stroke="#fff" stroke-width="1" stroke-linejoin="round"
-          d="M 65,115
-            L 105,155
-            L 85,95
-            L 65,115
-            L 105,155"/>
-      </svg>
-      <div class="link-container">
-        <a href="mailto:samuel@samuelreagan.com" title="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/samuelreagan/" target="_blank" rel="noopener" title="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/samuelreagan" target="_blank" rel="noopener" title="Github">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://codepen.io/samuelreagan" target="_blank" rel="noopener" title="CodePen">
-          <i class="fab fa-codepen"></i>
-        </a>
+      
+      <div class="cloud-container">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="cloud-base"></div>
       </div>
-      <div class="footer-text">
-        Samuel Reagan &copy; 2020
-      </div>
-    </footer>
+    </main>-->
   </body>
 </html>
