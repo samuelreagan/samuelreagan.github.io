@@ -236,14 +236,22 @@ html, body {
   top: 3rem;
 }
 
+.section {
+  padding: 1rem;
+  min-height: 100%;
+}
+
 .about-section {
   position: relative;
   z-index: 2;
   padding: 1rem 0;
 }
 
+.about-section .section-header {
+  color: $light;
+}
+
 .section-header {
-  color: #fff;
   margin-bottom: 1rem;
   font-family: 'Sen', sans-serif;
   font-size: 3rem;
@@ -261,7 +269,74 @@ html, body {
   font-family: 'Monsterrat', sans-serif;
   font-size: 1.25rem;
   line-height: 2rem;
-  color: #fff;
+  color: $light;
+}
+
+.contact-section {
+  background: $light;
+  color: $purple-1;
+}
+
+.contact-section .section-header {
+  color: $purple-1;
+}
+
+.contact-form {
+  width: 50%;
+  margin: auto;
+  font-family: 'Monsterrat', sans-serif;
+  font-size: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-label {
+  display: block;
+}
+
+.form-group {
+  margin: auto;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.form-row .form-group {
+  width: 50%;
+}
+
+.form-input, .form-textarea {
+  border: 2px solid $purple-1;
+  border-radius: 2px;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.form-textarea {
+  height: 10rem;
+}
+
+.form-button {
+  cursor: pointer;
+  border: 2px solid $purple-1;
+  border-radius: 2px;
+  background: transparent;
+  padding: 0.5rem;
+  color: $purple-1;
+  font-size: 1.5rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: $purple-1;
+    color: #fff;
+  }
+}
+
+.form-button-group {
+  text-align: center;
 }
 
 @media(max-width: 600px) {

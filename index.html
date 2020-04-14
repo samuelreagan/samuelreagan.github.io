@@ -54,7 +54,7 @@
       <div class="mountains"></div>
       <div class="sun"></div>
     </section>
-    <!--
+    
     <main class="main-content">
       <div class="moon-container">
         <div class="moon"></div>
@@ -64,22 +64,35 @@
         <div class="star star-four"></div>
         <div class="star star-five"></div>
       </div>
-      <section class="about-section">
+      <section id="about" class="section about-section">
         <h2 class="section-header">About Me</h2>
-        <article class="section-content"></article>
+        <article class="section-content">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, sapiente quae cum sint obcaecati magni in totam esse doloribus numquam autem! Nobis qui ad aspernatur distinctio, optio id exercitationem cum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptas maiores odit voluptates ullam distinctio laudantium repellendus veritatis harum ipsam, minima animi officia, cum fugit error! Voluptates numquam voluptate repudiandae.
+        </article>
       </section>
-      <div class="rocket-container">
-        <div class="rocket"></div>
+      <section id="contact" class="section contact-section">
+        <h2 class="section-header">Get In Touch</h2>
+        <form name="contact-form" data-netlify="true" method="POST" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="form-name" class="form-label">Name</label>
+              <input type="text" name="name" class="form-input" id="form-name" required>
+            </div>
+            <div class="form-group">
+              <label for="form-email" class="form-label">Email</label>
+              <input type="email" name="email" class="form-input" id="form-email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="form-message">Message</label>
+            <textarea name="message" class="form-textarea" id="form-message" required></textarea>
+          </div>
+          <div class="form-group form-button-group">
+            <button class="form-button" type="submit">Send Message</button>
+          </div>
+        </form>
+      </section>
       </div>
-      
-      <div class="cloud-container">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="cloud-base"></div>
-      </div>
-    </main>-->
+    </main>
   </body>
 </html>
