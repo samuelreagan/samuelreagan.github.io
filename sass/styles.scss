@@ -29,10 +29,13 @@ html, body {
   height: 100%;
 }
 
+body {
+  background:  $purple-1;
+}
+
 //-- Layout Styles --//
 .hero-section {
   min-height: 100%;
-  background:  $purple-1;
 }
 
 .main-header {
@@ -336,6 +339,13 @@ html, body {
 }
 
 .form-button-group {
+  text-align: center;
+}
+
+.site-footer {
+  padding: 0.5rem;
+  font-family: 'Monsterrat', sans-serif;
+  color: $light;
   text-align: center;
 }
 
