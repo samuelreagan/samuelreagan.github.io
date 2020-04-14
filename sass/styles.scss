@@ -349,6 +349,22 @@ body {
   text-align: center;
 }
 
+.link-container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  padding: 1rem 0.5rem;
+  a {
+    color: $light;
+    font-size: 2rem;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+}
+
 @media(max-width: 600px) {
   html {
     font-size: 12px;
