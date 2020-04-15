@@ -225,6 +225,11 @@ body {
   color: $light;
 }
 
+.gradient-transition {
+  background: linear-gradient($purple-3 25%, $purple-2 25%, $purple-2 50%, $purple-1 50%, $purple-1 75%, $purple-0 75%);
+  height: 5rem;
+}
+
 .contact-section {
   background: $light;
   color: $purple-1;
