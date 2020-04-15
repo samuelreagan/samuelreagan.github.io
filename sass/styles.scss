@@ -32,7 +32,8 @@ html, body {
 }
 
 body {
-  background:  $purple-1;
+  background:  $purple-1 url('../assets/sun.svg') no-repeat center;
+  background-size: 20rem 20rem;
 }
 
 //-- Layout Styles --//
@@ -41,12 +42,8 @@ body {
 }
 
 .main-header {
-  position: fixed;
-  top: 10rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
   width: 100%;
+  margin-top: 2rem;
   text-align: center;
   color: #fff;
   font-family: 'Sen', sans-serif;
@@ -64,10 +61,7 @@ body {
 
 //-- Header --//
 .main-nav {
-  position: fixed;
-  top: 0;
   display: flex;
-  z-index: 3;
   width: 100%;
   align-items: center;
   justify-content: space-between;
@@ -134,25 +128,10 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  z-index: 4;
-}
-
-.sun {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20rem;
-  height: 20rem;
-  z-index: 1;
-  border-radius: 50%;
-  background: radial-gradient($orange-0 30%, $orange-1 30%, $orange-1 40%, $orange-2 40%, $orange-2 50%, $orange-3 50%, $orange-3 60%, $orange-4 60%);
 }
 
 .main-content {
   background: $purple-4;
-  position: relative;
-  z-index: 4;
 }
 
 .moon-container {
@@ -222,11 +201,6 @@ body {
   min-height: 100%;
 }
 
-.about-section {
-  position: relative;
-  z-index: 2;
-}
-
 .about-section .section-header {
   color: $light;
 }
@@ -239,8 +213,6 @@ body {
 }
 
 .section-content {
-  position: relative;
-  z-index: 2;
   max-width: 50rem;
   margin: auto;
   background: $purple-4;//linear-gradient(#3500d3 10px, #240090 10px, #240090 20px, #fff 20px);
