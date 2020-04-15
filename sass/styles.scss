@@ -41,22 +41,21 @@ body {
   min-height: 100%;
 }
 
-.main-header {
-  width: 100%;
-  margin-top: 2rem;
+.page-heading, .page-subheading {
   text-align: center;
   color: #fff;
   font-family: 'Sen', sans-serif;
+}
 
-  h1 {
-    font-size: 3.5rem;
-    text-shadow: 3px 3px $dark;
-  }
+.page-heading {
+  margin-top: 2rem;
+  font-size: 3.5rem;
+  text-shadow: 3px 3px $dark;
+}
 
-  h2 {
-    font-size: 1.5rem;
-    text-shadow: 2px 2px $dark;
-  }
+.page-subheading {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px $dark;
 }
 
 //-- Header --//
@@ -218,8 +217,7 @@ body {
 .section-content {
   max-width: 50rem;
   margin: auto;
-  background: $purple-4;//linear-gradient(#3500d3 10px, #240090 10px, #240090 20px, #fff 20px);
-  border-radius: 10px;
+  background: $purple-4;
   font-size: 1.25rem;
   line-height: 2rem;
   color: $light;
