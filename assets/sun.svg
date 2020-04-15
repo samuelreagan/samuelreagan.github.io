@@ -10,6 +10,6 @@
     <stop offset="85%" style="stop-color:#fe6e00;" />
     <stop offset="85%" style="stop-color:#fd5602;" />
     <stop offset="100%" style="stop-color:#fd5602;" />
-  </radialGradient>-->
+  </radialGradient>
   <circle cx="250" cy="250" r="250" fill="url(#sun-gradient)"/>
 </svg>
