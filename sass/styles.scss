@@ -32,8 +32,8 @@ html, body {
 }
 
 body {
-  background:  $purple-1 url('../assets/sun.svg') no-repeat center;
-  background-size: 20rem 20rem;
+  background:  $purple-1 url('../assets/sun.svg') no-repeat 50% calc(100% - (0.2222 * 100% / 3));
+  background-size: calc(max(20rem, 25vw));
 }
 
 //-- Layout Styles --//
@@ -202,7 +202,7 @@ body {
   padding: 3rem 1.5rem;
 }
 
-.about-section .section-header {
+.section-header {
   color: $light;
 }
 
@@ -216,10 +216,13 @@ body {
 .section-content {
   max-width: 50rem;
   margin: auto;
-  background: $purple-4;
   font-size: 1.25rem;
   line-height: 2rem;
   color: $light;
+}
+
+.dev-section {
+  background: $purple-3;
 }
 
 .gradient-transition {
@@ -296,6 +299,7 @@ body {
 
 .site-footer {
   transform: translateY(calc(0.2222 * 100vw / 2 * -1));
+  height: 0; // So FireFox would not have extra space where the footer should be.
   padding: 0.5rem;
   color: $light;
   text-align: center;
