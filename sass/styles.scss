@@ -295,9 +295,20 @@ body {
 }
 
 .site-footer {
+  transform: translateY(calc(0.2222 * 100vw / 2 * -1));
   padding: 0.5rem;
   color: $light;
   text-align: center;
+}
+
+.footer-logo {
+  display: inline-block;
+  text-align: center;
+  width: 6rem;
+
+  img {
+    width: 100%;
+  }
 }
 
 .link-container {
@@ -306,7 +317,8 @@ body {
   align-items: center;
   width: 50%;
   margin: auto;
-  padding: 1rem 0.5rem;
+  padding: 3rem 0.5rem;
+
   a {
     color: $light;
     width: 2rem;
@@ -320,6 +332,11 @@ body {
       height: 100%;
     }
   }
+}
+
+.footer-copyright {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
 }
 
 @media(max-width: 600px) {
