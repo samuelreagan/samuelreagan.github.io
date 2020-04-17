@@ -49,6 +49,7 @@ body {
 
 .page-heading {
   margin-top: 2rem;
+  margin-bottom: 0.5rem;
   font-size: 3.5rem;
   text-shadow: 3px 3px $dark;
 }
@@ -230,6 +231,44 @@ body {
   height: 5rem;
 }
 
+.services {
+  max-width: 50rem;
+  margin: 2rem auto 0;
+  color: $purple-4;
+}
+
+.services {
+  text-align: center;
+}
+
+.service-container {
+  background-color: $light;
+  border-radius: $border-radius;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+.service-header {
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Sen', sans-serif;
+  background: $purple-1;
+  color: #fff;
+}
+
+.service-list {
+  list-style: none;
+
+  li {
+    padding: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
 .contact-section {
   background: $light;
   color: $purple-1;
@@ -341,6 +380,12 @@ body {
 .footer-copyright {
   margin-bottom: 2rem;
   font-size: 1.25rem;
+}
+
+@media(min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
 }
 
 @media(max-width: 600px) {
