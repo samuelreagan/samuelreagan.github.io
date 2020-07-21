@@ -12,58 +12,135 @@
     <title>Samuel Reagan</title>
 
     <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-2.svg">
   </head>
   <body>
-    <main class="container">
-      <section class="col">
-        <?xml version="1.0" standalone="no"?>
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 160">
-          <path fill="none" stroke="#eee" stroke-width="1" stroke-linejoin="round" class="path mainPath"
-            d="M 55,105
-              L 55,5
-              L 105,55
-              L 5,155
-              L 55,5
-              L 5,55
-              L 55,105" />
-          <path fill="none" stroke="#eee" stroke-width="1" stroke-linejoin="round" class="path secPath"
-            d="M 65,115
-              L 105,155
-              L 85,95
-              L 65,115
-              L 105,155" />
-        </svg>
-        <a href="#about"><span id="arrow"></span></a>
-      </section>
+    <section class="hero-section">
+      <nav class="main-nav">
+        <a class="nav-logo" href="index.html">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 160" aria-labelledby="primaryLogo primaryLogoDesc" role="img">
+            <title id="primaryLogo">Go To Home Page</title>
+            <desc id="primaryLogoDesc">An animated versions of Sam's logo that will take you back to the home page when clicked.</desc>
+            <path class="path main-path" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"
+              d="M 55,105
+                L 55,5
+                L 105,55
+                L 5,155
+                L 55,5
+                L 5,55
+                L 55,105"/>
+            <path class="path secondary-path" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"
+              d="M 65,115
+                L 105,155
+                L 85,95
+                L 65,115
+                L 105,155"/>
+          </svg>
+        </a>
 
-      <section class="col" id="about">
-        <h1>Samuel Reagan</h1>
-        <img src="assets/avatar.png" alt="">
-        <p>
-          Hey! I'm currently a software developer located in <a href="https://northwestarkansas.org/" rel="noopener" target="_blank">North West Arkansas</a>.
-          I graduated from <a href="https://www.astate.edu" rel="noopener" target="_blank">Arkansas State University</a> in 2019 with a Bachelor's in Computer Science and 
-          I've been working at <a href="https://www.jbhunt.com" rel="noopener" target="_blank">J.B. Hunt Transport</a> since October 2019. 
-          Check out the links below to see my work and to get in touch!
+        <div class="nav-links">
+          <a class="nav-link" href="#about">About</a>
+          <!-- <a class="nav-link" href="#development">Services</a> -->
+          <a class="nav-link" href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <h1 class="page-heading">Samuel Reagan</h1>
+      <h2 class="page-subheading">Software Developer</h2>
+    </section>
+    
+    <main class="main-content">
+      <section id="about" class="section about-section">
+        <h2 class="section-header">About Me</h2>
+        <p class="section-content">
+          Hey! I'm currently a software developer located in North West Arkansas. I graduated from Arkansas State University in 2019 with a Bachelor's in Computer Science and I've been working at J.B. Hunt Transport since October 2019.
         </p>
-        <aside class="socials">
-          <a href="mailto:samuel@samuelreagan.com" title="Email">
-            <i class="fas fa-paper-plane"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/samuelreagan/" target="_blank" rel="noopener" title="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/samuelreagan" target="_blank" rel="noopener" title="Github">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://codepen.io/samuelreagan" target="_blank" rel="noopener" title="CodePen">
-            <i class="fab fa-codepen"></i>
-          </a>
-        </aside>
+      </section>
+      <!--
+      <section id="development" class="section dev-section">
+        <h2 class="section-header">What Do I Offer?</h2>
+        <p class="section-content">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, sapiente quae cum sint obcaecati magni in totam esse doloribus numquam autem! Nobis qui ad aspernatur distinctio, optio id exercitationem cum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptas maiores odit voluptates ullam distinctio laudantium repellendus veritatis harum ipsam, minima animi officia, cum fugit error! Voluptates numquam voluptate repudiandae.
+        </p>
+        <div class="services">
+          <div class="service-container">
+            <header class="service-header">
+              <img src="assets/webpage.svg" alt="">
+              <h3>Web Development</h3>
+            </header>
+            <ul class="service-list">
+              <li>Custom Websites</li>
+              <li>Website Redesign</li>
+              <li>Search Engine Optimization - SEO</li>
+              <li>Wordpress</li>
+              <li>Hosting</li>
+            </ul>
+          </div>
+          
+          <div class="service-container">
+            <header class="service-header">
+              <img src="assets/pen.svg" alt="">
+              <h3>Graphic Design</h3>
+            </header>
+            <ul class="service-list">
+              <li>Logo Design</li>
+              <li>Web Design</li>
+              <li>Search Engine Optimization - SEO</li>
+              <li>Wordpress</li>
+              <li>Hosting</li>
+            </ul>
+          </div>
+        </div>
+      </section> -->
+      <div class="gradient-transition"></div>
+      <section id="contact" class="section contact-section">
+        <h2 class="section-header">Get In Touch</h2>
+        <form name="contact-form" data-netlify="true" method="POST" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="form-name" class="form-label">Name</label>
+              <input type="text" name="name" class="form-input" id="form-name" required>
+            </div>
+            <div class="form-group">
+              <label for="form-email" class="form-label">Email</label>
+              <input type="email" name="email" class="form-input" id="form-email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="form-message">Message</label>
+            <textarea name="message" class="form-textarea" id="form-message" required></textarea>
+          </div>
+          <div class="form-group form-button-group">
+            <button class="form-button" type="submit">Send Message</button>
+          </div>
+        </form>
       </section>
     </main>
+
+    <svg class="wave-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,224L60,218.7C120,213,240,203,360,176C480,149,600,107,720,80C840,53,960,43,1080,80C1200,117,1320,203,1380,245.3L1440,288L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+
+    <footer class="site-footer">
+      <a class="footer-logo" href="#">
+        <img src="assets/logo-white.svg" alt="Sam's Logo" title="Go to Home Page">
+      </a>
+      <div class="link-container">
+        <a href="mailto:samuel@samuelreagan.com" target="_blank" rel="noopener" title="Email Sam">
+          <img src="assets/envelope.svg" alt="Email Sam">
+        </a>
+        <a href="https://www.linkedin.com/in/samuelreagan/" target="_blank" rel="noopener" title="Sam's LinkedIn">
+          <img src="assets/linkedin.svg" alt="See Sam's LinkedIn">
+        </a>
+        <a href="https://github.com/samuelreagan" target="_blank" rel="noopener" title="Sam's Github">
+          <img src="assets/Github.svg" alt="See Sam's Github">
+        </a>
+        <a href="https://codepen.io/samuelreagan" target="_blank" rel="noopener" title="Sam's CodePen">
+          <img src="assets/codepen.svg" alt="See Sam's Codepen">
+        </a>
+      </div>
+      <p class="footer-copyright">Samuel Reagan &copy; 2020</p>
+    </footer>
   </body>
 </html>

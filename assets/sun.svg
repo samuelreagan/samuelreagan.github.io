@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <radialGradient id="sun-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+    <stop offset="0%" style="stop-color:#fedebe;" />
+    <stop offset="40%" style="stop-color:#fedebe;" />
+    <stop offset="40%" style="stop-color:#ffaf42;" />
+    <stop offset="55%" style="stop-color:#ffaf42;" />
+    <stop offset="55%" style="stop-color:#ff8302;" />
+    <stop offset="70%" style="stop-color:#ff8302;" />
+    <stop offset="70%" style="stop-color:#fe6e00;" />
+    <stop offset="85%" style="stop-color:#fe6e00;" />
+    <stop offset="85%" style="stop-color:#fd5602;" />
+    <stop offset="100%" style="stop-color:#fd5602;" />
+  </radialGradient>
+  <circle cx="250" cy="250" r="250" fill="url(#sun-gradient)"/>
+</svg>
