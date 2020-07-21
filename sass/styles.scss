@@ -124,15 +124,6 @@ body {
   }
 }
 
-.wave-1, .wave-3 {
-  position: absolute;
-  bottom: 0;
-}
-
-.wave-1 {
-  z-index: 2;
-}
-
 .main-content {
   background: $purple-4;
 }
@@ -200,7 +191,7 @@ body {
 }
 
 .section {
-  padding: 3rem 1.5rem;
+  padding: 6rem 1.5rem;
 }
 
 .section-header {
