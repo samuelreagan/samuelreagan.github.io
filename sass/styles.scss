@@ -381,9 +381,15 @@ body {
   font-size: 1.25rem;
 }
 
-@media(min-width: 1200px) {
+@media(min-width: 1400px) {
   html {
     font-size: 18px;
+  }
+}
+
+@media(min-width: 1200px) {
+  html {
+    font-size: 16px;
   }
 }
 
