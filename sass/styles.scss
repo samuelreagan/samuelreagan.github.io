@@ -1,26 +1,16 @@
 //-- Variables --//
 $light: #fff;
 $dark: #222;
-$purple-0: #7040ff;
-$purple-1: #3500d3;
-$purple-2: #240090;
-$purple-3: #190061;
-$purple-4: #0c0032;
-$orange-0: #fedebe;
-$orange-1: #ffaf42;
-$orange-2: #ff8302;
-$orange-3: #fe6e00;
-$orange-4: #fd5602;
-$red-0: #bb0000;
-
-$text-shadow-length: 3px;
+$primary: #3500d3;
 $border-radius: 6px;
+
+//$primary: #cc0202;
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 html {
@@ -32,8 +22,7 @@ html, body {
 }
 
 body {
-  background:  $purple-1 url('../assets/sun.svg') no-repeat 50% calc(100% - (0.2222 * 100% / 3));
-  background-size: calc(max(20rem, 25vw));
+  background: $primary;
 }
 
 //-- Layout Styles --//
@@ -43,7 +32,7 @@ body {
 
 .page-heading, .page-subheading {
   text-align: center;
-  color: #fff;
+  color: $light;
   font-family: 'Sen', sans-serif;
 }
 
@@ -51,12 +40,10 @@ body {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   font-size: 3.5rem;
-  text-shadow: 3px 3px $dark;
 }
 
 .page-subheading {
   font-size: 1.5rem;
-  text-shadow: 2px 2px $dark;
 }
 
 //-- Header --//
@@ -66,7 +53,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  background: linear-gradient($purple-1 90%, $purple-2 90%, $purple-2 95%, $purple-3 95%);
 }
 
 .nav-link {
@@ -125,7 +111,7 @@ body {
 }
 
 .main-content {
-  background: $purple-4;
+  background: $light;;
 }
 
 .section {
@@ -133,14 +119,11 @@ body {
 }
 
 .section-header {
-  color: $light;
-}
-
-.section-header {
   margin-bottom: 1rem;
   font-family: 'Sen', sans-serif;
   font-size: 3rem;
   text-align: center;
+  color: $primary;
 }
 
 .section-content {
@@ -148,76 +131,20 @@ body {
   margin: auto;
   font-size: 2rem;
   line-height: 3rem;
-  color: $light;
+  color: $primary;
 }
 
-.dev-section {
-  background: $purple-3;
-}
+.midwave {
+  fill: $primary;
 
-.gradient-transition-1 {
-  background: linear-gradient($purple-2 50%, $purple-3 50%, $purple-3 100%);
-  height: 2.5rem;
-}
-
-.gradient-transition-2 {
-  background: linear-gradient($purple-3 25%, $purple-2 25%, $purple-2 50%, $purple-1 50%, $purple-1 75%, $purple-0 75%);
-  height: 5rem;
-}
-
-.services {
-  max-width: 50rem;
-  margin: 2rem auto 0;
-  color: $purple-4;
-}
-
-.services {
-  text-align: center;
-}
-
-.service-container {
-  background-color: $light;
-  border-radius: $border-radius;
-
-  &:not(:last-child) {
-    margin-bottom: 2rem;
-  }
-}
-
-.service-header {
-  border-top-left-radius: $border-radius;
-  border-top-right-radius: $border-radius;
-  padding: 1rem;
-  font-size: 1.5rem;
-  background: $purple-1;
-  color: #fff;
-
-  h3 {
-    font-family: 'Sen', sans-serif;
-  }
-
-  img {
-    width: 4rem;
-    margin-bottom: 1rem;
-  }
-}
-
-.service-list {
-  list-style: none;
-
-  li {
-    padding: 1rem;
-    font-size: 1.25rem;
+  &:nth-child(2) {
+    transform: translateY(10px);
   }
 }
 
 .contact-section {
   background: $light;
-  color: $purple-1;
-}
-
-.contact-section .section-header {
-  color: $purple-1;
+  color: $dark;
 }
 
 .contact-form {
@@ -234,6 +161,7 @@ body {
 .form-label {
   display: block;
   margin-bottom: 0.5rem;
+  color: $primary;
 }
 
 .form-group {
@@ -247,9 +175,8 @@ body {
 }
 
 .form-input, .form-textarea {
-  border: 3px solid $purple-0;
+  border: 3px solid $primary;
   border-radius: $border-radius;
-  box-shadow: 0 0 0 3px $purple-1;
   padding: 0.5rem;
   width: 100%;
   font-size: 1.5rem;
@@ -260,19 +187,25 @@ body {
   resize: none;
 }
 
+.test {
+  transform: translateY(10px);
+  position: absolute;
+  bottom: 0;
+}
+
 .form-button {
   cursor: pointer;
-  border: 4px solid $purple-1;
+  border: 2px solid $primary;
   border-radius: $border-radius;
   background: transparent;
   padding: 0.5rem;
-  color: $purple-1;
+  color: $primary;
   font-size: 1.5rem;
   transition: background, color 0.5s ease;
 
   &:hover {
-    background: $purple-1;
-    color: #fff;
+    background: $primary;
+    color: $light;
   }
 }
 
