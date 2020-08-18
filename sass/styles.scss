@@ -2,6 +2,7 @@
 $light: #fff;
 $dark: #222;
 $primary: #3500d3;
+$primary-dark: #331392;
 $border-radius: 6px;
 
 //$primary: #cc0202;
@@ -22,12 +23,13 @@ html, body {
 }
 
 body {
-  background: $primary;
+  background: $primary-dark;
 }
 
 //-- Layout Styles --//
 .hero-section {
   min-height: 100%;
+  background: linear-gradient($primary-dark, $primary);
 }
 
 .page-heading, .page-subheading {
@@ -211,6 +213,10 @@ body {
 
 .form-button-group {
   text-align: center;
+}
+
+.footer-wave {
+  background: linear-gradient($primary, $primary-dark);
 }
 
 .site-footer {
