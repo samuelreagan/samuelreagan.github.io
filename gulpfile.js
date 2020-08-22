@@ -2,6 +2,7 @@ const { src, dest, parallel, watch } = require('gulp');
  
 const sass = require('gulp-dart-sass');
 const minifyCSS = require('gulp-csso');
+const pug = require('gulp-pug');
 
 function css() {
   return src('./sass/styles.scss')
@@ -12,6 +13,15 @@ function css() {
 
 function watchSass() {
   return watch(['sass/*.scss'], css);
+}
+
+function runPug() {
+  return src('./views/*.pug')
+  .pipe(pug({
+    doctype: 'html',
+    pretty: false
+  }))
+  .pipe(dest('./views'))
 }
 
 function lint() {
@@ -31,4 +41,5 @@ function lint() {
 exports.watchSass = watchSass;
 exports.css = css;
 exports.lint = lint;
+exports.runPug = runPug;
 exports.default = parallel(css);
