@@ -23,18 +23,18 @@ html, body {
 }
 
 body {
-  background: $primary-dark;
+  background: $light;
 }
 
 //-- Layout Styles --//
 .hero-section {
   min-height: 100%;
-  background: linear-gradient($primary-dark, $primary);
+  background: $light;
 }
 
 .page-heading, .page-subheading {
   text-align: center;
-  color: $light;
+  color: $primary;
   font-family: 'Sen', sans-serif;
 }
 
@@ -58,7 +58,7 @@ body {
 
 .nav-link {
   font-family: 'Sen', sans-serif;
-  color: $light;
+  color: $primary;
   text-decoration: none;
   font-size: 1.5rem;
 
@@ -107,12 +107,12 @@ body {
     fill: transparent;
   }
   100% {
-    fill: $light;
+    fill: $primary;
   }
 }
 
 .main-content {
-  background: $light;;
+  background: $primary;
 }
 
 .section {
@@ -124,7 +124,7 @@ body {
   font-family: 'Sen', sans-serif;
   font-size: 3rem;
   text-align: center;
-  color: $primary;
+  color: $light;
 }
 
 .section-content {
@@ -132,11 +132,11 @@ body {
   margin: auto;
   font-size: 2rem;
   line-height: 3rem;
-  color: $primary;
+  color: $light;
 }
 
 .midwave {
-  fill: $primary;
+  fill: $light;
 
   &:nth-child(2) {
     transform: translateY(10px);
@@ -144,7 +144,7 @@ body {
 }
 
 .contact-section {
-  background: $light;
+  background: $primary;
   color: $dark;
 }
 
@@ -162,7 +162,7 @@ body {
 .form-label {
   display: block;
   margin-bottom: 0.5rem;
-  color: $primary;
+  color: $light;
 }
 
 .form-group {
@@ -176,7 +176,7 @@ body {
 }
 
 .form-input, .form-textarea {
-  border: 3px solid $primary;
+  border: none;
   border-radius: $border-radius;
   padding: 0.5rem;
   width: 100%;
@@ -196,17 +196,17 @@ body {
 
 .form-button {
   cursor: pointer;
-  border: 2px solid $primary;
+  border: 2px solid $light;
   border-radius: $border-radius;
   background: transparent;
   padding: 0.5rem;
-  color: $primary;
+  color: $light;
   font-size: 1.5rem;
   transition: background, color 0.5s ease;
 
   &:hover {
-    background: $primary;
-    color: $light;
+    background: $light;
+    color: $primary;
   }
 }
 
@@ -215,14 +215,14 @@ body {
 }
 
 .footer-wave {
-  background: linear-gradient($primary, $primary-dark);
+  background: $light;
 }
 
 .site-footer {
   transform: translateY(calc(0.2222 * 100vw / 2 * -1));
   height: 0; // So FireFox would not have extra space where the footer should be.
   padding: 0.5rem;
-  color: $light;
+  color: $primary;
   text-align: center;
 }
 
@@ -245,7 +245,7 @@ body {
   padding: 3rem 0.5rem;
 
   a {
-    color: $light;
+    color: $primary;
     width: 2rem;
     height: 2rem;
 
