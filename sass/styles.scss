@@ -5,8 +5,6 @@ $primary: #3500d3;
 $primary-dark: #331392;
 $border-radius: 6px;
 
-//$primary: #cc0202;
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,20 +24,25 @@ body {
   background: $light;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sen', sans-serif;
+}
+
 //-- Layout Styles --//
 .hero-section {
-  min-height: 100%;
   background: $light;
+}
+
+.page-header {
+  margin: 3rem 0 9rem 0;
 }
 
 .page-heading, .page-subheading {
   text-align: center;
   color: $primary;
-  font-family: 'Sen', sans-serif;
 }
 
 .page-heading {
-  margin-top: 2rem;
   margin-bottom: 0.5rem;
   font-size: 3.5rem;
 }
@@ -143,6 +146,48 @@ body {
   }
 }
 
+.services-section {
+  background: $light;
+
+  .section-header, .section-content {
+    color: $dark;
+  }
+}
+
+.service {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  max-width: 50rem;
+  margin: auto;
+  background: #eee;
+  border-radius: 0.5rem;
+}
+
+.service-header {
+  flex: 1 1 100%;
+  background: $primary;
+  color: $light;
+  text-align: center;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.service:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+.service-col {
+  flex: 0 1 50%;
+  padding: 1rem;
+}
+
+.service-image {
+  display: block;
+  margin: auto;
+}
+
 .contact-section {
   background: $primary;
   color: $dark;
@@ -188,10 +233,8 @@ body {
   resize: none;
 }
 
-.test {
+.wave1 {
   transform: translateY(10px);
-  position: absolute;
-  bottom: 0;
 }
 
 .form-button {
@@ -279,6 +322,10 @@ body {
 @media(max-width: 600px) {
   html {
     font-size: 12px;
+  }
+
+  .service {
+    flex-flow: column nowrap;
   }
 }
 
