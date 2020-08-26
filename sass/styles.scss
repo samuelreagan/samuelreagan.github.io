@@ -9,7 +9,7 @@ $border-radius: 6px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 html {
@@ -24,8 +24,17 @@ body {
   background: $light;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Sen', sans-serif;
+h1 {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 2rem;
 }
 
 //-- Layout Styles --//
@@ -34,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-header {
-  margin: 3rem 0 9rem 0;
+  margin: 5rem 0 9rem 0;
 }
 
 .page-heading, .page-subheading {
@@ -60,7 +69,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link {
-  font-family: 'Sen', sans-serif;
   color: $primary;
   text-decoration: none;
   font-size: 1.5rem;
@@ -118,13 +126,20 @@ h1, h2, h3, h4, h5, h6 {
   background: $primary;
 }
 
+.about-photo {
+  display: block;
+  width: 20vw;
+  min-width: 15rem;
+  max-width: 20rem;
+  margin: 3rem auto 4rem auto;
+}
+
 .section {
   padding: 6rem 2rem;
 }
 
 .section-header {
   margin-bottom: 1rem;
-  font-family: 'Sen', sans-serif;
   font-size: 3rem;
   text-align: center;
   color: $light;
@@ -133,8 +148,6 @@ h1, h2, h3, h4, h5, h6 {
 .section-content {
   max-width: 50rem;
   margin: auto;
-  font-size: 2rem;
-  line-height: 3rem;
   color: $light;
 }
 
@@ -154,38 +167,37 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.service-container {
+  display: flex;
+  max-width: 80rem;
+  width: 80vw;
+  margin: auto;
+  justify-content: space-between;
+}
+
 .service {
   display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-  max-width: 50rem;
-  margin: auto;
+  flex-flow: column nowrap;
   background: #eee;
   border-radius: 0.5rem;
+  flex: 0 1 48%;
 }
 
 .service-header {
-  flex: 1 1 100%;
-  background: $primary;
-  color: $light;
+  background: #eee;
+  color: $dark;
   text-align: center;
   border-radius: 0.5rem 0.5rem 0 0;
   padding: 1rem 0;
   font-size: 1.5rem;
 }
 
-.service:not(:last-child) {
-  margin-bottom: 4rem;
-}
-
 .service-col {
   flex: 0 1 50%;
-  padding: 1rem;
 }
 
-.service-image {
-  display: block;
-  margin: auto;
+.service-description {
+  padding: 1.5rem;
 }
 
 .contact-section {
@@ -319,13 +331,19 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media(max-width: 600px) {
-  html {
-    font-size: 12px;
+@media(max-width: 1000px) {
+  .service-container {
+    flex-flow: column nowrap;
   }
 
   .service {
-    flex-flow: column nowrap;
+    margin-bottom: 1rem;
+  }
+}
+
+@media(max-width: 600px) {
+  html {
+    font-size: 12px;
   }
 }
 
