@@ -42,25 +42,12 @@ p {
   background: $light;
 }
 
-.success-page {
-  height: 100%;
-
-  .wave1 {
-    position: absolute;
-    bottom: 0;
-  }
-
-  .page-header {
-    margin: 5rem 2rem;
-  }
-}
-
 .page-header {
-  margin: 5rem 0 9rem 0;
+  margin: 5rem 2rem 9rem 2rem;
+  text-align: center;
 }
 
 .page-heading, .page-subheading {
-  text-align: center;
   color: $primary;
 }
 
@@ -261,19 +248,36 @@ p {
   transform: translateY(10px);
 }
 
-.form-button {
+.btn {
   cursor: pointer;
-  border: 2px solid $light;
   border-radius: $border-radius;
-  background: transparent;
   padding: 0.5rem;
-  color: $light;
   font-size: 1.5rem;
   transition: background, color 0.5s ease;
+}
+
+.form-btn {
+  border: 2px solid $light;
+  background: transparent;
+  color: $light;
 
   &:hover {
     background: $light;
     color: $primary;
+  }
+}
+
+.back-btn {
+  border: 2px solid $primary;
+  background: transparent;
+  color: $primary;
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+
+  &:hover {
+    background: $primary;
+    color: $light;
   }
 }
 
