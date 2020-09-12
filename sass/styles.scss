@@ -131,7 +131,7 @@ p {
   width: 20vw;
   min-width: 15rem;
   max-width: 20rem;
-  margin: 3rem auto 4rem auto;
+  margin: 1rem auto 1rem auto;
 }
 
 .section {
@@ -149,6 +149,15 @@ p {
   max-width: 50rem;
   margin: auto;
   color: $light;
+  font-size: 1.25rem;
+
+  a {
+    color: $light;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
 .midwave {
