@@ -32,9 +32,17 @@ h2, h3, h4, h5, h6 {
   font-family: 'Noto Sans', sans-serif;
 }
 
+h3 {
+  margin-bottom: 0.5rem;
+}
+
 p {
   font-size: 1.25rem;
   line-height: 2rem;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
 //-- Layout Styles --//
@@ -154,10 +162,6 @@ p {
   a {
     color: $light;
   }
-
-  p:not(:last-child) {
-    margin-bottom: 1rem;
-  }
 }
 
 .midwave {
@@ -178,7 +182,8 @@ p {
 
 .service-container {
   display: flex;
-  max-width: 80rem;
+  flex-flow: column nowrap;
+  max-width: 50rem;
   margin: auto;
   justify-content: space-between;
 }
@@ -188,7 +193,7 @@ p {
   flex-flow: column nowrap;
   background: #eee;
   border-radius: 0.5rem;
-  flex: 0 1 48%;
+  margin: 1rem 0;
 }
 
 .service-header {
