@@ -1,6 +1,6 @@
 //-- Variables --//
 $light: #fff;
-$dark: #222;
+$dark: #444;
 $primary: #3500d3;
 $primary-dark: #331392;
 $border-radius: 6px;
@@ -43,6 +43,15 @@ p {
   &:not(:last-child) {
     margin-bottom: 1rem;
   }
+}
+
+ul {
+  margin-bottom: 1rem;
+}
+
+li {
+  font-size: 1.25rem;
+  list-style-position: inside;
 }
 
 //-- Layout Styles --//
