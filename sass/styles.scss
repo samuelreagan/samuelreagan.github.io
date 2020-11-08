@@ -111,6 +111,7 @@ li {
 
 //-- Logo Styles --//
 .nav-logo {
+  margin: auto;
   width: 3rem;
 }
 
@@ -323,10 +324,9 @@ li {
 }
 
 .site-footer {
-  transform: translateY(calc(0.2222 * 100vw / 2 * -1));
-  height: 0; // So FireFox would not have extra space where the footer should be.
+  background: $primary;
   padding: 0.5rem;
-  color: $primary;
+  color: $light;
   text-align: center;
 }
 
