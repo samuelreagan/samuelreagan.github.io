@@ -75,6 +75,7 @@ li {
 
 .page-subheading {
   font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 //-- Header --//
@@ -288,6 +289,22 @@ li {
   padding: 0.5rem;
   font-size: 1.5rem;
   transition: background, color 0.5s ease;
+}
+
+.header-btn {
+  background: $primary;
+  color: $light;
+  text-decoration: none;
+  transition: background 0.8s ease;
+}
+
+.header-btn:hover {
+  background: $primary-dark;
+}
+
+.btn-image {
+  text-align: center;
+  width: 2rem;
 }
 
 .form-btn {
