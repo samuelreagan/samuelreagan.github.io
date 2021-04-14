@@ -17,11 +17,7 @@ body {
   background: #fff;
 }
 
-h1 {
-  font-family: "Noto Sans KR", sans-serif;
-}
-
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -81,10 +77,6 @@ li {
   transition: all 0.5s ease;
 }
 
-.shadow {
-  box-shadow: 0px 0px 5px #014421;
-}
-
 .nav-link {
   color: #fff;
   text-decoration: none;
@@ -138,14 +130,6 @@ li {
   background: #014421;
 }
 
-.about-photo {
-  display: block;
-  width: 20vw;
-  min-width: 15rem;
-  max-width: 20rem;
-  margin: 1rem auto 1rem auto;
-}
-
 .section {
   padding: 6rem 2rem;
 }
@@ -163,11 +147,7 @@ li {
   color: #fff;
   font-size: 2rem;
 }
-.section-content img {
-  display: block;
-  margin: 1rem auto;
-  width: 50%;
-}
+
 .section-content a {
   color: #fff;
 }
@@ -177,46 +157,6 @@ li {
 }
 .midwave:nth-child(2) {
   transform: translateY(10px);
-}
-
-.services-section {
-  background: #fff;
-}
-.services-section .section-header, .services-section .section-content {
-  color: #444;
-}
-
-.service-container {
-  display: flex;
-  flex-flow: column nowrap;
-  max-width: 50rem;
-  margin: auto;
-  justify-content: space-between;
-}
-
-.service {
-  display: flex;
-  flex-flow: column nowrap;
-  background: #eee;
-  border-radius: 0.5rem;
-  margin: 1rem 0;
-}
-
-.service-header {
-  background: #eee;
-  color: #444;
-  text-align: center;
-  border-radius: 0.5rem 0.5rem 0 0;
-  padding: 1rem 0;
-  font-size: 1.5rem;
-}
-
-.service-col {
-  flex: 0 1 50%;
-}
-
-.service-description {
-  padding: 1.5rem;
 }
 
 .contact-section {
@@ -287,16 +227,15 @@ li {
 }
 
 .back-btn {
-  border: 2px solid #014421;
-  background: transparent;
-  color: #014421;
+  background: #014421;
+  color: #fff;
   display: inline-block;
   margin-top: 1rem;
   text-decoration: none;
 }
 .back-btn:hover {
-  background: #014421;
-  color: #fff;
+  background: #fff;
+  color: #014421;
 }
 
 .form-button-group {
@@ -340,9 +279,6 @@ li {
 .link-container a:not(:last-child) {
   margin-right: 1.5rem;
 }
-.link-container a img {
-  height: 100%;
-}
 
 .footer-copyright {
   margin-bottom: 2rem;
@@ -357,15 +293,6 @@ li {
 @media (min-width: 1200px) {
   html {
     font-size: 16px;
-  }
-}
-@media (max-width: 1000px) {
-  .service-container {
-    flex-flow: column nowrap;
-  }
-
-  .service {
-    margin-bottom: 1rem;
   }
 }
 @media (max-width: 600px) {
