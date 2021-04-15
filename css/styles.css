@@ -48,6 +48,10 @@ li {
   background-size: cover;
 }
 
+.hero-section.success-page {
+  height: 100vh;
+}
+
 .page-header {
   margin: 12rem 2rem 9rem 2rem;
   text-align: center;
@@ -206,6 +210,12 @@ li {
 
 .header-waves {
   transform: translateY(10px);
+}
+
+.success-page .header-waves {
+  bottom: 0;
+  position: absolute;
+  transform: translateY(0px);
 }
 
 .btn {
